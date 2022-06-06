@@ -59,7 +59,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -125,28 +127,37 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list professionalist">
             <li class="list-item">
-              <img
-                src="./images/what_can_we_do_11.jpg"
-                alt="проектирование с помощью современных технологий"
-                class="img"
-                width="370"
-              />
+              <div class="box-for-view">
+                <img
+                  src="./images/what_can_we_do_11.jpg"
+                  alt="проектирование с помощью современных технологий"
+                  class="img"
+                  width="370"
+                />
+                <h3 class="li-title view-title">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="list-item">
-              <img
-                src="./images/what_can_we_do_21.jpg"
-                alt="оптимизация для мобильных приложений"
-                class="img"
-                width="370"
-              />
+              <div class="box-for-view">
+                <img
+                  src="./images/what_can_we_do_21.jpg"
+                  alt="проектирование с помощью современных технологий"
+                  class="img"
+                  width="370"
+                />
+                <h3 class="li-title view-title">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="list-item">
-              <img
-                src="./images/what_can_we_do_31.jpg"
-                alt="разработка цветового дизайна"
-                class="img"
-                width="370"
-              />
+              <div class="box-for-view">
+                <img
+                  src="./images/what_can_we_do_31.jpg"
+                  alt="проектирование с помощью современных технологий"
+                  class="img"
+                  width="370"
+                />
+                <h3 class="li-title view-title">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -474,5 +485,12 @@
         </section>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="icon-close"></button>
+      </div>
+
+      <script src="./js/modal.js"></script>
+    </div>
   </body>
 </html>
